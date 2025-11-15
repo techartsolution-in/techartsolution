@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechArt Solutions - Campus Design & Tech Support</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Apply the Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* Custom gradient for Instagram buttons */
+        .bg-insta {
+            background-image: linear-gradient(to right, #f97316, #d946ef, #ec4899);
+        }
+        .hover\:bg-insta-hover:hover {
+            background-image: linear-gradient(to right, #ea580c, #c026d3, #db2777);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+    <!-- 1. Header / Navigation Bar -->
+    <header class="bg-white/95 backdrop-blur-sm sticky top-0 z-50 w-full shadow-sm border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo & Brand Name -->
+            <a href="#home" class="flex items-center space-x-2">
+                <!-- Simple SVG Logo -->
+                <svg class="h-8 w-8 text-blue-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor" fill-opacity="0.3"/>
+                    <path d="M2 17L12 22L22 17L12 12L2 17Z" fill="currentColor"/>
+                    <path d="M2 7L12 12L22 7L12 2L2 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 12V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="text-2xl font-bold text-gray-900">TechArt Solutions</span>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#services" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">Services</a>
+                <a href="#pricing" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">Pricing</a>
+                <a href="#portfolio" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">Portfolio</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">Contact</a>
+            </nav>
+            
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden z-50">
+                <svg id="menu-open-icon" class="w-6 h-6 text-gray-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <svg id="menu-close-icon" class="w-6 h-6 text-gray-900 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-[77px] left-0 w-full bg-white shadow-lg border-t border-gray-200">
+            <nav class="flex flex-col p-4 space-y-2">
+                <a href="#services" class="block px-4 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-blue-600 font-medium">Services</a>
+                <a href="#pricing" class="block px-4 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-blue-600 font-medium">Pricing</a>
+                <a href="#portfolio" class="block px-4 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-blue-600 font-medium">Portfolio</a>
+                <a href="#contact" class="block px-4 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-blue-600 font-medium">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. Hero Section -->
+        <section id="home" class="bg-gray-50/50">
+            <div class="container mx-auto px-6 py-24 md:py-32 flex flex-col lg:flex-row items-center">
+                <!-- Left Column: Text Content -->
+                <div class="lg:w-3/5 w-full text-center lg:text-left">
+                    <span class="inline-block bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+                        Campus Creative & Tech Studio
+                    </span>
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+                        Designs that stand out.
+                        <br class="hidden md:block">
+                        <span class="text-blue-600">Tech that never shuts down.</span>
+                    </h1>
+                    <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto lg:mx-0">
+                        We provide fellow students with stunning creative designs and rock-solid tech support, all in one place.
+                    </p>
+                    
+                    <!-- Tags -->
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-2 mt-8">
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Posters & Logos</span>
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">OS Setup</span>
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">WiFi Fix</span>
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Branding</span>
+                    </div>
+
+                    <!-- Call-to-Action Buttons -->
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 mt-10">
+                        <a href="https://www.instagram.com/tech_art_solution" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center space-x-2 bg-insta hover:bg-insta-hover text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 transform hover:scale-105">
+                            <!-- Instagram Icon -->
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                            <span>DM on Instagram</span>
+                        </a>
+                        <a href="https://wa.me/6381231706" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center space-x-2 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 transform hover:scale-105">
+                            <!-- WhatsApp Icon -->
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <span>WhatsApp Me</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Right Column: Help Card -->
+                <div class="lg:w-2/5 w-full mt-16 lg:mt-0">
+                    <div class="bg-white rounded-xl shadow-2xl p-8 border border-gray-200 transform lg:rotate-3 transition duration-500 hover:rotate-0 hover:scale-105">
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">What can we help you with?</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                <span class="text-gray-600">Need a stunning poster for your fest?</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                <span class="text-gray-600">Laptop running slow or need Windows setup?</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                <span class="text-gray-600">Starting a new club and need a logo?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 3. Services Section -->
+        <section id="services" class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Services</h2>
+                    <p class="mt-4 text-lg text-gray-600">
+                        The unique combo your campus needs. We're experts in both pixels and processors.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 mt-16">
+                    <!-- Design Services Card -->
+                    <div class="bg-gray-50/70 rounded-xl p-8 shadow-lg transition duration-300 hover:shadow-2xl hover:border-blue-300 border border-transparent">
+                        <div class="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6">
+                            <!-- Design Icon -->
+                            <svg class="w-8 h-8 text-blue-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.83-.13 2.69-.39L20 22l-1.91-1.91c.26-.86.39-1.76.39-2.69 0-5.5-4.5-10-10-10z"></path><path d="M12 2a10 10 0 0 0-3.3 2.02"></path><path d="M16.5 7.5a2.5 2.5 0 0 1 0 5 2.5 2.5 0 0 1 0-5z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">🎨 Design Services</h3>
+                        <p class="text-gray-600 mb-6">From event posters to personal branding, we make your ideas look unforgettable.</p>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                                <span>Posters (Events, Fests)</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                                <span>Logos (Clubs, Startups)</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                                <span>Insta Highlight Covers & Branding</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                                <span>YouTube Thumbnails</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                                <span>Professional Resume Designs</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Tech Support Card -->
+                    <div class="bg-gray-50/70 rounded-xl p-8 shadow-lg transition duration-300 hover:shadow-2xl hover:border-blue-300 border border-transparent">
+                        <div class="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6">
+                            <!-- Tech Icon -->
+                            <svg class="w-8 h-8 text-blue-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">🛠️ Tech Support</h3>
+                        <p class="text-gray-600 mb-6">Stop stressing over tech problems. We'll get your gear running perfectly so you can focus on studying.</p>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                                <span>Windows/Linux Installation & Setup</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                                <span>Software Setup (Adobe, CAD, etc.)</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                                <span>Campus WiFi & Network Fixes</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                                <span>Virus & Malware Removal</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                                <span>Bootable Pendrive Creation</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 4. Pricing Section -->
+        <section id="pricing" class="py-20 md:py-28 bg-gray-50/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Transparent Pricing</h2>
+                    <p class="mt-4 text-lg text-gray-600">
+                        No hidden fees. Simple, student-friendly prices so you know exactly what you're paying for.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 mt-16">
+                    <!-- Design Pricing -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Design Pricing</h3>
+                        <ul class="space-y-4">
+                            <li class="flex justify-between items-center text-lg p-4 bg-gray-50 rounded-lg">
+                                <span class="text-gray-700">Posters</span>
+                                <span class="font-bold text-blue-600">₹120</span>
+                            </li>
+                            <li class="flex justify-between items-center text-lg p-4 bg-gray-50 rounded-lg">
+                                <span class="text-gray-700">Logos</span>
+                                <span class="font-bold text-blue-600">₹200</span>
+                            </li>
+                            <li class="flex justify-between items-center text-lg p-4 bg-gray-50 rounded-lg">
+                                <span class="text-gray-700">Branding Pack (Logo + Covers)</span>
+                                <span class="font-bold text-blue-600">₹350</span>
+                            </li>
+                            <li class="flex justify-between items-center text-lg p-4 bg-gray-50 rounded-lg">
+                                <span class="text-gray-700">Resume Design</span>
+                                <span class="font-bold text-blue-600">₹150</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Tech Pricing -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Tech Pricing</h3>
+                        <ul class="space-y-4">
+                            <li class="flex justify-between items-center text-lg p-4 bg-gray-50 rounded-lg">
+                                <span class="text-gray-700">Windows Install (10/11)</span>
+                                <span class="font-bold text-blue-600">₹200</span>
+                            </li>
+                            <li class="flex justify-between items-center text-lg p-4 bg-gray-50 rounded-lg">
+                                <span class="text-gray-700">Single Software Install</span>
+                                <span class="font-bold text-blue-600">₹70</span>
+                            </li>
+                            <li class="flex justify-between items-center text-lg p-4 bg-gray-50 rounded-lg">
+                                <span class="text-gray-700">Campus WiFi Fix</span>
+                                <span class="font-bold text-blue-600">₹100</span>
+                            </li>
+                            <li class="flex justify-between items-center text-lg p-4 bg-gray-50 rounded-lg">
+                                <span class="text-gray-700">Virus Removal</span>
+                                <span class="font-bold text-blue-600">₹150</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Portfolio Section -->
+        <section id="portfolio" class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Work</h2>
+                    <p class="mt-4 text-lg text-gray-600">
+                        A few examples of what we can create for you.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+                    <!-- Portfolio Item 1: Poster -->
+                    <div class="group relative rounded-lg overflow-hidden shadow-lg aspect-w-3 aspect-h-4">
+                        <img src="ChatGPT Image Nov 15, 2025, 10_57_59 PM.png" 
+                             alt="Sample Poster" 
+                             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition duration-300"></div>
+                        <h4 class="absolute bottom-4 left-4 text-white text-xl font-bold z-10">Sample Poster</h4>
+                    </div>
+                    
+                    <!-- Portfolio Item 2: Logo -->
+                    <div class="group relative rounded-lg overflow-hidden shadow-lg aspect-w-3 aspect-h-4">
+                        <img src="logo.png" 
+                             alt="Sample Logo" 
+                             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition duration-300"></div>
+                        <h4 class="absolute bottom-4 left-4 text-white text-xl font-bold z-10">Sample Logo</h4>
+                    </div>
+                    
+                    <!-- Portfolio Item 3: Highlight Covers -->
+                    <div class="group relative rounded-lg overflow-hidden shadow-lg aspect-w-3 aspect-h-4">
+                        <img src="insta hig.png" 
+                             alt="Sample Highlight Covers" 
+                             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition duration-300"></div>
+                        <h4 class="absolute bottom-4 left-4 text-white text-xl font-bold z-10">Insta Highlights</h4>
+                    </div>
+                    
+                    <!-- Portfolio Item 4: Thumbnail -->
+                    <div class="group relative rounded-lg overflow-hidden shadow-lg aspect-w-3 aspect-h-4">
+                        <img src="yt.png" 
+                             alt="Sample YouTube Thumbnail" 
+                             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition duration-300"></div>
+                        <h4 class="absolute bottom-4 left-4 text-white text-xl font-bold z-10">YouTube Thumbnail</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Testimonial Section -->
+        <section id="testimonial" class="py-20 md:py-28 bg-blue-600 text-white">
+            <div class="container mx-auto px-6 text-center max-w-3xl">
+                <!-- Quote Icon -->
+                <svg class="w-16 h-16 mx-auto text-blue-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+                </svg>
+                <blockquote class="mt-6 text-2xl md:text-3xl italic font-medium leading-relaxed">
+                    "Got a poster designed for my club event and my laptop's Windows installed. Super quick, professional, and easy to deal with. Highly recommend!"
+                </blockquote>
+                <p class="mt-8 text-xl font-bold text-blue-100">
+                    — Rohan S., 3rd Year B.Tech
+                </p>
+            </div>
+        </section>
+
+        <!-- 7. Contact Section -->
+        <section id="contact" class="py-20 md:py-28 bg-gray-50/50">
+            <div class="container mx-auto px-6 text-center max-w-3xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Get in Touch</h2>
+                <p class="mt-4 text-lg text-gray-600">
+                    Ready to start your project? We're just a message away.
+                    Contact us on your favorite platform.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center gap-4 mt-12">
+                    <!-- Instagram Button -->
+                    <a href="https://www.instagram.com/tech_art_solution" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center space-x-3 bg-insta hover:bg-insta-hover text-white font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300 transform hover:scale-105 text-lg">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                        <span>Instagram DM</span>
+                    </a>
+                    
+                    <!-- WhatsApp Button -->
+                    <a href="https://wa.me/6381231706" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center space-x-3 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300 transform hover:scale-105 text-lg">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span>WhatsApp</span>
+                    </a>
+                    
+                    <!-- Email Button -->
+                    <a href="mailto:techartsolution.in@gmail.com" class="flex items-center justify-center space-x-3 bg-gray-700 hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300 transform hover:scale-105 text-lg">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 8. Footer Section -->
+    <footer class="bg-gray-900 text-gray-400">
+        <div class="container mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-4 md:space-y-0">
+            <p>&copy; <span id="year"></span> TechArt Solutions. All rights reserved.</p>
+            <p class="text-sm italic">"Designs that stand out. Tech that never shuts down."</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- Mobile Menu Toggle ---
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const openIcon = document.getElementById('menu-open-icon');
+        const closeIcon = document.getElementById('menu-close-icon');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('hidden');
+            openIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+
+        // --- Close Mobile Menu on Link Click ---
+        const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    toggleMenu();
+                }
+            });
+        });
+
+        // --- Auto-update Footer Year ---
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
